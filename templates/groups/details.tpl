@@ -80,7 +80,7 @@
 							<!-- ENDIF group.pending.picture -->
 						</td>
 						<td class="member-name">
-							<a href="{config.relative_path}/user/{group.pending.userslug}">{group.pending.username}</a>
+							<a href="{config.relative_path}/user/{group.pending.userslug}"><!-- IF group.pending.fullname -->{group.pending.fullname}<!-- ELSE -->{group.pending.username}<!-- ENDIF group.pending.fullname --></a>
 						</td>
 						<td>
 							<div class="btn-group pull-right">
@@ -132,7 +132,7 @@
 							<!-- ENDIF group.invited.picture -->
 						</td>
 						<td class="member-name">
-							<a href="{config.relative_path}/user/{group.invited.userslug}">{group.invited.username}</a>
+							<a href="{config.relative_path}/user/{group.invited.userslug}"><!-- IF group.invited.fullname -->{group.invited.fullname}<!-- ELSE -->{group.invited.username}<!-- ENDIF group.invited.fullname --></a>
 						</td>
 						<td>
 							<div class="btn-group pull-right">
